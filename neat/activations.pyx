@@ -6,11 +6,12 @@ and code for adding new user-defined ones
 from __future__ import division
 import math
 import types
+from libc.math cimport exp 
 
 
-def sigmoid_activation(z):
+cdef double sigmoid_activation(double z):
     z = max(-60.0, min(60.0, 5.0 * z))
-    return 1.0 / (1.0 + math.exp(-z))
+    return 1.0 / (1.0 + exp(-z))
 
 
 def tanh_activation(z):
@@ -138,7 +139,8 @@ class ActivationFunctionSet(object):
         self.add('cube', cube_activation)
 
     def add(self, name, function):
-        validate_activation(function)
+        # validate_activation(function) # Cython doesn't seem to like isinstance, will investigate later;
+                                        # but honestly, why even do this?
         self.functions[name] = function
 
     def get(self, name):

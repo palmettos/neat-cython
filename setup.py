@@ -13,7 +13,7 @@ extensions = [
     ),
     Extension(
         'neat.activations',
-        ['neat/nn/activations.pyx']
+        ['neat/activations.pyx']
     )
 ]
 
@@ -30,7 +30,7 @@ setup(
     long_description='Python implementation of NEAT (NeuroEvolution of Augmenting Topologies), a method ' +
                      'developed by Kenneth O. Stanley for evolving arbitrary neural networks.',
     packages=['neat', 'neat/iznn', 'neat/nn', 'neat/ctrnn'],
-    ext_modules=cythonize(extensions),
+    ext_modules=cythonize(extensions, annotate=True),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',

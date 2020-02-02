@@ -15,6 +15,12 @@ For further information regarding general concepts and theory, please see
 
 `neat-python` is licensed under the [3-clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
+## Building ##
+
+To build the Cython extensions, first follow the instructions on [installing Cython](https://cython.readthedocs.io/en/latest/src/quickstart/install.html).
+
+Then, run `python setup.py build_ext --inplace` from the root directory.
+
 ## Getting Started ##
 
 If you want to try neat-python, please check out the repository, start playing with the examples (`examples/xor` is

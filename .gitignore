@@ -11,5 +11,6 @@ species_fitness.csv
 *~
 *.pyc
 *.pyo
+*.pyd
 __pycache__/
 *stats*.dat*

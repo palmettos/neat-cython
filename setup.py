@@ -1,4 +1,17 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+from setuptools.extension import Extension
+from Cython.Build import cythonize
+
+extensions = [
+    Extension(
+        'neat.graphs',
+        ['neat/graphs.pyx']
+    ),
+    Extension(
+        'neat.nn.feed_forward',
+        ['neat/nn/feed_forward.pyx']
+    )
+]
 
 setup(
     name='neat-python',
@@ -13,6 +26,7 @@ setup(
     long_description='Python implementation of NEAT (NeuroEvolution of Augmenting Topologies), a method ' +
                      'developed by Kenneth O. Stanley for evolving arbitrary neural networks.',
     packages=['neat', 'neat/iznn', 'neat/nn', 'neat/ctrnn'],
+    ext_modules=cythonize(extensions),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',

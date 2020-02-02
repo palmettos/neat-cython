@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/CodeReclaimers/neat-python.svg)](https://travis-ci.org/CodeReclaimers/neat-python)
 [![Coverage Status](https://coveralls.io/repos/CodeReclaimers/neat-python/badge.svg?branch=master&service=github)](https://coveralls.io/github/CodeReclaimers/neat-python?branch=master)
 
-This is a fork of [neat-python](https://github.com/CodeReclaimers/neat-python) which was created by [CodeReclaimers](https://github.com/CodeReclaimers). I am not a contributor to the original project. This repository differs from the original project only in that it contains compilable Cython optimizations in performance-critical modules.
+This is a fork of [neat-python](https://github.com/CodeReclaimers/neat-python) which was created by [CodeReclaimers](https://github.com/CodeReclaimers). I am not a contributor to the original project. This repository differs from the original project only in that it contains compilable [Cython](https://cython.org/) optimizations in performance-critical modules.
 
 ## STATUS NOTE ##
 

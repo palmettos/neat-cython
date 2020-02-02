@@ -3,6 +3,8 @@
 
 This is a fork of [neat-python](https://github.com/CodeReclaimers/neat-python) which was created by [CodeReclaimers](https://github.com/CodeReclaimers). I am not a contributor to the original project. This repository differs from the original project only in that it contains compilable [Cython](https://cython.org/) optimizations in performance-critical modules.
 
+All existing APIs and documentation are functionally equivalent.
+
 ## About ##
 
 NEAT (NeuroEvolution of Augmenting Topologies) is a method developed by Kenneth O. Stanley for evolving arbitrary neural

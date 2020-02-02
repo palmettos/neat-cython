@@ -10,6 +10,10 @@ extensions = [
     Extension(
         'neat.nn.feed_forward',
         ['neat/nn/feed_forward.pyx']
+    ),
+    Extension(
+        'neat.activations',
+        ['neat/nn/activations.pyx']
     )
 ]
 

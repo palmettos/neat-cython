@@ -51,7 +51,7 @@ def run(config_file):
     total_time = end - start
     global total_connections
     conns_per_sec = total_connections / total_time
-    print(f'evaluated {total_connections} in {total_time} seconds ({conns_per_sec} cps)')
+    print(f'evaluated {total_connections} connections in {total_time} seconds ({conns_per_sec} cps)')
 
     # # Display the winning genome.
     # print('\nBest genome:\n{!s}'.format(winner))

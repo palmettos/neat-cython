@@ -6,9 +6,11 @@ and code for adding new user-defined ones
 from __future__ import division
 import math
 import types
-from libc.math cimport exp 
+from libc.math cimport exp
+cimport cython
 
 
+@cython.cdivision(True)
 cdef double sigmoid_activation(double z):
     z = max(-60.0, min(60.0, 5.0 * z))
     return 1.0 / (1.0 + exp(-z))

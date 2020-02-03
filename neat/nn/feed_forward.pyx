@@ -1,5 +1,9 @@
 from neat.graphs import feed_forward_layers
 
+cdef struct NodeEvals:
+    int node
+    double (*sigmoid_activation)(double z)
+
 
 class FeedForwardNetwork(object):
     def __init__(self, inputs, outputs, node_evals):
@@ -9,6 +13,8 @@ class FeedForwardNetwork(object):
         self.values = dict((key, 0.0) for key in inputs + outputs)
 
     def activate(self, inputs):
+        print(self.node_evals)
+        exit()
         if len(self.input_nodes) != len(inputs):
             raise RuntimeError("Expected {0:n} inputs, got {1:n}".format(len(self.input_nodes), len(inputs)))
 

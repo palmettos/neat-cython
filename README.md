@@ -1,6 +1,6 @@
 This is a fork of [neat-python](https://github.com/CodeReclaimers/neat-python) (which was created by [CodeReclaimers](https://github.com/CodeReclaimers)). I am not a contributor to the original project. This repository differs from the original project only in that it contains compilable [Cython](https://cython.org/) optimizations in performance-critical modules.
 
-All existing APIs and documentation are functionally equivalent.
+All existing APIs and documentation are intended to be functionally equivalent. This is a WIP, so some things may be broken.
 
 ## Building ##
 

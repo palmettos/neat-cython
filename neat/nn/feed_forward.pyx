@@ -2,7 +2,7 @@ from neat.graphs import feed_forward_layers
 
 cdef struct NodeEvals:
     int node
-    double (*sigmoid_activation)(double z)
+    double (*act_func)(double)
 
 
 class FeedForwardNetwork(object):
